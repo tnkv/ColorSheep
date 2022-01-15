@@ -1,0 +1,14 @@
+name: SheepSpawner
+version: '${project.version}'
+main: ru.tnkv.sheepspawner.SheepSpawner
+api-version: 1.15
+authors: [ tnkv ]
+description: Spawn color sheep
+website: https://hohol.club
+
+
+commands:
+  sheep:
+    perrmission: sheep.spawn
+    perission-message: '§aНедостаточно прав. sheep.spawn'
+    description: 'Спавнит овцу с рандомным цветом. /sheep <colorname> Спавнит овцу с заданным цветом.'
