@@ -1,8 +1,7 @@
 package ru.tnkv.sheepspawner;
 
-import ru.tnkv.sheepspawner.*;
-import org.bukkit.command.Command;
 import org.bukkit.plugin.java.JavaPlugin;
+import ru.tnkv.sheepspawner.commands.*;
 
 public final class SheepSpawner extends JavaPlugin {
 
@@ -10,6 +9,7 @@ public final class SheepSpawner extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
        System.out.println("SheepSpawner enabled");
+       this.getCommand("sheep").setExecutor(new CommandSheep());
     }
 
     @Override
